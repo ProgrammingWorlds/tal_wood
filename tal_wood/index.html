@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ود — Tal Wood | فنّ من قلب الطبيعة</title>
+<meta name="description" content="ود — Tal Wood، جيرش الأردن. أثاث Live Edge، ديكور، أدوات مائدة وبوفيهات من الخشب الطبيعي. قطع فريدة صنعتها الطبيعة لمنزلك.">
+<meta name="theme-color" content="#f3ecdf">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%232b1f14'/%3E%3Ctext x='32' y='45' font-size='30' text-anchor='middle' fill='%2379b940' font-family='serif' font-weight='bold'%3E%D9%88%D8%AF%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Almarai:wght@300;400;700;800&family=Marcellus&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="/Css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+
+<noscript><style>.loader,.cursor-dot,.cursor-ring{display:none}</style></noscript>
+
+<!-- حلقة تحميل -->
+<div class="loader" id="loader">
+  <div class="shutter shutter-top"></div>
+  <div class="shutter shutter-bottom"></div>
+  <div class="loader-core">
+    <svg class="loader-rings" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="92" pathLength="1"/>
+      <circle cx="100" cy="100" r="70" pathLength="1"/>
+      <circle cx="100" cy="100" r="48" pathLength="1"/>
+      <circle cx="100" cy="100" r="26" pathLength="1"/>
+    </svg>
+    <span class="loader-word">ود</span>
+  </div>
+  <div class="loader-foot">
+    <span class="loader-pct" id="loaderPct">0%</span>
+    <span class="loader-brand">TAL WOOD — JERASH · JORDAN</span>
+  </div>
+</div>
+
+<div class="paper-grain"></div>
+<div class="scroll-progress"><span id="scrollBar"></span></div>
+<div class="cursor-dot" id="cDot"></div>
+<div class="cursor-ring" id="cRing"><span id="cLabel"></span></div>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#home" class="logo">
+      <span class="logo-mark">ود</span>
+      <span class="logo-txt"><b>Tal Wood</b><small>LIVE EDGE CRAFT</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" class="active">الرئيسية</a>
+      <a href="#about">الحكاية</a>
+      <a href="#gallery">المعرض</a>
+      <a href="#services">أقسامنا</a>
+      <a href="#journey">رحلة القطعة</a>
+      <a href="#contact">تواصل</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="pill-wa" data-wa href="#" aria-label="واتساب">
+        <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span>اطلب قطعتك</span>
+      </a>
+      <button class="burger" id="burger" aria-label="القائمة"><i></i><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- قائمة الموبايل -->
+<div class="m-menu" id="mMenu">
+  <nav>
+    <a href="#home"><em>01</em>الرئيسية</a>
+    <a href="#about"><em>02</em>الحكاية</a>
+    <a href="#gallery"><em>03</em>المعرض</a>
+    <a href="#services"><em>04</em>أقسامنا</a>
+    <a href="#journey"><em>05</em>رحلة القطعة</a>
+    <a href="#contact"><em>06</em>تواصل معنا</a>
+  </nav>
+  <div class="m-menu-foot">
+    <a data-wa href="#">واتساب</a>
+    <a href="https://www.instagram.com/tal_wood/" target="_blank" rel="noopener">@tal_wood</a>
+    <span>جيرش — الأردن</span>
+  </div>
+</div>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="hero-glow" aria-hidden="true"></div>
+  <canvas id="heroCanvas" data-cursor="اسحب"></canvas>
+  <div class="hero-fallback" aria-hidden="true">
+    <svg viewBox="0 0 500 500">
+      <circle cx="250" cy="250" r="235"/><circle cx="250" cy="250" r="185"/>
+      <circle cx="250" cy="250" r="135"/><circle cx="250" cy="250" r="85"/>
+      <circle cx="250" cy="250" r="40"/>
+    </svg>
+  </div>
+
+  <div class="wrap hero-content">
+    <span class="hero-kicker">TAL WOOD · وود · JERASH — JORDAN</span>
+    <h1 class="hero-title">
+      <span class="h-line"><span>حين تتحوّل</span></span>
+      <span class="h-line"><span><em class="hl-green">الطبيعة</em> إلى</span></span>
+      <span class="h-line"><span class="hl-stroke">فنٍّ</span> يُعاش</span>
+    </h1>
+    <p class="hero-sub">
+      في <b>«ود»</b> نصنع أثاثًا وديكورًا وأدوات مائدة وبوفيهات من الأخشاب الطبيعية —
+      قطعٌ فريدة لا تتكرر، لأنّ الطبيعة لا تُكرّر توقيعها أبدًا.
+    </p>
+    <div class="hero-cta">
+      <a class="btn btn-green" data-wa data-magnetic href="#">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        تواصل عبر واتساب
+      </a>
+      <a class="btn btn-line" data-magnetic href="#gallery">شاهد المعرض
+        <svg viewBox="0 0 24 24"><path d="M19 12H5m6-7-7 7 7 7"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="drag-hint" id="dragHint">
+    <svg viewBox="0 0 24 24"><path d="M8 3 4 7l4 4M4 7h16M16 21l4-4-4-4M20 17H4"/></svg>
+    اسحب لتدوير الشرائح
+  </div>
+
+  <div class="hero-stats">
+    <div class="wrap hs-row">
+      <div class="hstat"><b>30.8K</b><span>متابع على إنستغرام</span></div>
+      <div class="hstat"><b>294</b><span>عملًا منشورًا</span></div>
+      <div class="hstat"><b>100%</b><span>خشب طبيعي</span></div>
+      <div class="hstat"><b>JERASH</b><span>جيرش — الأردن</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- شريط متحرك -->
+<div class="ribbon" aria-hidden="true"><div class="ribbon-track" id="ribbonTrack">
+  <span>أثاث Live Edge</span><i></i><span>ديكور المنزل</span><i></i>
+  <span>أدوات المائدة</span><i></i><span>أطباق تقديم</span><i></i>
+  <span>بوفيهات ضيافة</span><i></i><span>مجموعات إيبوكسي</span><i></i>
+</div></div>
+
+<!-- ================= ABOUT ================= -->
+<section class="about sec" id="about">
+  <div class="wrap about-grid">
+    <div class="about-txt">
+      <div data-reveal>
+        <span class="kicker">الحكاية — OUR STORY</span>
+        <h2>لكل جذعٍ حكاية…<br>ونحن نُحسن سماعها</h2>
+        <span class="u-line"></span>
+      </div>
+      <p data-reveal>وُلد <b>«ود»</b> في جيرش من شغفٍ بالخشب كما أرادته الطبيعة: بحافّته الحيّة وعروقه وشقوقه. لا نُخفي عيوب الجذع — بل نجعلها <b>بصمة القطعة</b>.</p>
+      <p data-reveal>من طاولةٍ تجلس حولها العائلة، إلى طبقٍ يُقدَّم عليه القهوة، إلى ديكورٍ يمنح الزاوية روحًا — كل قطعة تمرّ بأيدينا كي تصل إلى بيتك <b>بكل حب</b>.</p>
+      <div class="about-stats" data-reveal>
+        <div class="astat"><b><i>+</i><span class="count" data-count="1000">0</span></b><span>قطعة فريدة</span></div>
+        <div class="astat"><b><span class="count" data-count="30.8">0</span>K</b><span>متابع يثق بنا</span></div>
+        <div class="astat"><b><span class="count" data-count="100">0</span>%</b><span>مواد طبيعية</span></div>
+      </div>
+    </div>
+    <div class="about-media" data-reveal>
+      <div class="about-frame">
+        <img class="parallax" src="/Images/3.png" alt="ديكور خشبي طبيعي من وود">
+      </div>
+      <svg class="orbit-badge" viewBox="0 0 120 120" aria-hidden="true">
+        <defs><path id="orbPath" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+        <text><textPath href="#orbPath">ود · TAL WOOD · LIVE EDGE · وود · TAL WOOD ·</textPath></text>
+      </svg>
+      <span class="about-seal">ود</span>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPOTLIGHT GALLERY ================= -->
+<section class="spot" id="gallery">
+  <div class="wrap spot-head">
+    <div>
+      <span class="kicker">المعرض — COLLECTION</span>
+      <h2>ستُّ قصصٍ من الخشب</h2>
+    </div>
+    <p class="spot-hint">مرّر للأسفل… ودع كل قطعة تحكي حكايتها <b class="desk-only">— واضغط لتكبيرها</b></p>
+  </div>
+
+  <div class="spot-stage" id="spotStage">
+    <article class="spot-slide is-on" data-cursor="تكبير">
+      <div class="spot-txt">
+        <span class="spot-num">01</span>
+        <span class="spot-tag">ضيافة</span>
+        <h3>بوفيهات التقديم</h3>
+        <p>لوحات وأطباق ضيافة تُجمّل المائدة وتحوّل كل تجمّعٍ إلى مناسبة تُذكر.</p>
+      </div>
+      <figure class="spot-media"><img src="/Images/1.png" alt="بوفيهات تقديم خشبية"></figure>
+    </article>
+    <article class="spot-slide" data-cursor="تكبير">
+      <div class="spot-txt">
+        <span class="spot-num">02</span>
+        <span class="spot-tag">المائدة</span>
+        <h3>أدوات المائدة</h3>
+        <p>أطباق ولوحات تقديم بعروقٍ لا تتكرر — دفء الخشب على سفرك اليومي.</p>
+      </div>
+      <figure class="spot-media"><img src="/Images/2.png" alt="أدوات مائدة خشبية"></figure>
+    </article>
+    <article class="spot-slide" data-cursor="تكبير">
+      <div class="spot-txt">
+        <span class="spot-num">03</span>
+        <span class="spot-tag">أثاث Live Edge</span>
+        <h3>الحافّة الحيّة</h3>
+        <p>قطع أثاث استثنائية تركنا فيها حافة الجذع كما رسمتها الطبيعة.</p>
+      </div>
+      <figure class="spot-media"><img src="/Images/4.png" alt="أثاث لايف إيدج"></figure>
+    </article>
+    <article class="spot-slide" data-cursor="تكبير">
+      <div class="spot-txt">
+        <span class="spot-num">04</span>
+        <span class="spot-tag">إيبوكسي</span>
+        <h3>خشبٌ وراتنج</h3>
+        <p>حيث يلتقي الخشب بألوان النهر — التميّز، الغامَة، النقّار، الصفاء، الطبيعة.</p>
+      </div>
+      <figure class="spot-media"><img src="/Images/5.png" alt="فن الإيبوكسي"></figure>
+    </article>
+    <article class="spot-slide" data-cursor="تكبير">
+      <div class="spot-txt">
+        <span class="spot-num">05</span>
+        <span class="spot-tag">ديكور</span>
+        <h3>لمسات الطبيعة</h3>
+        <p>تفاصيل صغيرة بأثرٍ كبير — دفء الجذور في كل زاوية من بيتك.</p>
+      </div>
+      <figure class="spot-media"><img src="/Images/6.png" alt="لمسات ديكور خشبية"></figure>
+    </article>
+    <article class="spot-slide" data-cursor="تكبير">
+      <div class="spot-txt">
+        <span class="spot-num">06</span>
+        <span class="spot-tag">ديكور يتنفّس</span>
+        <h3>روح المكان</h3>
+        <p>قطع تمنح بيتك حضورًا هادئًا… لأن الخشب يتنفّس كما نتنفّس.</p>
+      </div>
+      <figure class="spot-media"><img src="/Images/3.png" alt="روح المكان — ديكور وود"></figure>
+    </article>
+  </div>
+
+  <div class="spot-ui">
+    <div class="spot-bar"><span id="spotBar"></span></div>
+    <div class="spot-dots" id="spotDots"></div>
+  </div>
+</section>
+
+<!-- ================= SERVICES (hover list) ================= -->
+<section class="svc sec" id="services">
+  <div class="wrap">
+    <div data-reveal>
+      <span class="kicker">أقسامنا — WHAT WE CRAFT</span>
+      <h2>مرّر فوق القسم…<br><span class="soft">ولتُرَ القطعة أمامك</span></h2>
+      <span class="u-line"></span>
+    </div>
+
+    <div class="svc-list" id="svcList">
+      <a class="svc-row" data-wa data-wa-msg="مرحبًا وود، أود الاستفسار عن قطع أثاث Live Edge." href="#" data-img="image/4.png" data-reveal>
+        <span class="svc-i">01</span>
+        <span class="svc-name">أثاث Live Edge</span>
+        <span class="svc-desc">طاولات وبوفيهات بحافّة حيّة</span>
+        <span class="svc-arrow"><svg viewBox="0 0 24 24"><path d="M19 12H5m6-7-7 7 7 7"/></svg></span>
+        <img class="svc-thumb" src="/Images/4.png" alt="123">
+      </a>
+      <a class="svc-row" data-wa data-wa-msg="مرحبًا وود، أود الاستفسار عن أدوات المائدة الخشبية." href="#" data-img="image/2.png" data-reveal>
+        <span class="svc-i">02</span>
+        <span class="svc-name">أدوات المائدة</span>
+        <span class="svc-desc">أطباق ولوحات تقديم فريدة</span>
+        <span class="svc-arrow"><svg viewBox="0 0 24 24"><path d="M19 12H5m6-7-7 7 7 7"/></svg></span>
+        <img class="svc-thumb" src="/Images/2.png" alt="123">
+      </a>
+      <a class="svc-row" data-wa data-wa-msg="مرحبًا وود، أود الاستفسار عن بوفيهات الضيافة." href="#" data-img="image/1.png" data-reveal>
+        <span class="svc-i">03</span>
+        <span class="svc-name">بوفيهات الضيافة</span>
+        <span class="svc-desc">قطع تُجمّل مناسباتكم</span>
+        <span class="svc-arrow"><svg viewBox="0 0 24 24"><path d="M19 12H5m6-7-7 7 7 7"/></svg></span>
+        <img class="svc-thumb" src="/Images/1.png" alt="123">
+      </a>
+      <a class="svc-row" data-wa data-wa-msg="مرحبًا وود، أود الاستفسار عن قطع الديكور." href="#" data-img="image/3.png" data-reveal>
+        <span class="svc-i">04</span>
+        <span class="svc-name">ديكور المنزل</span>
+        <span class="svc-desc">روحٌ للزاوية… من الجذور</span>
+        <span class="svc-arrow"><svg viewBox="0 0 24 24"><path d="M19 12H5m6-7-7 7 7 7"/></svg></span>
+        <img class="svc-thumb" src="/Images/3.png" alt="123">
+      </a>
+      <a class="svc-row" data-wa data-wa-msg="مرحبًا وود، أود الاستفسار عن مجموعات الإيبوكسي." href="#" data-img="image/5.png" data-reveal>
+        <span class="svc-i">05</span>
+        <span class="svc-name">مجموعات الإيبوكسي</span>
+        <span class="svc-desc">خشب وراتنج بألوان النهر</span>
+        <span class="svc-arrow"><svg viewBox="0 0 24 24"><path d="M19 12H5m6-7-7 7 7 7"/></svg></span>
+        <img class="svc-thumb" src="/Images/5.png" alt="123">
+      </a>
+    </div>
+  </div>
+  <div class="svc-preview" id="svcPreview"><img src="/Images/6.png" alt="123"></div>
+</section>
+
+<!-- ================= JOURNEY ================= -->
+<section class="journey sec" id="journey">
+  <div class="wrap">
+    <div data-reveal>
+      <span class="kicker">رحلة القطعة — PROCESS</span>
+      <h2>من الغابة… إلى بيتك</h2>
+      <span class="u-line"></span>
+    </div>
+    <div class="j-track">
+      <span class="j-line"><i id="jLine"></i></span>
+      <div class="j-step" data-reveal><b>01</b><h3>الانتقاء</h3><p>نختار الجذوع واحدةً واحدة، ونقرأ عروقها قبل أن نقرر مصيرها.</p></div>
+      <div class="j-step" data-reveal><b>02</b><h3>النحت</h3><p>نُبرز الحافّة الحيّة كما هي — بلا قصّ يزيّفها ولا تفاصيل زائدة.</p></div>
+      <div class="j-step" data-reveal><b>03</b><h3>الصقل</h3><p>تجفيف مدروس وصنفرة صبورة وتشطيبٌ يُحيي عمق العروق.</p></div>
+      <div class="j-step" data-reveal><b>04</b><h3>التسليم</h3><p>قطعة تحمل ختم «ود» تصل إلى بيتك لتروي حكايتها على مائدتك.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= QUOTE ================= -->
+<section class="quote sec">
+  <div class="wrap">
+    <span class="q-mark">”</span>
+    <p class="q-text" id="quoteText">كلُّ جذعٍ يعرف طريقه إلى القلوب قبل البيوت</p>
+    <span class="q-by">— فلسفة «ود» في صناعة الخشب</span>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="cta sec" id="contact">
+  <span class="cta-mark" aria-hidden="true">ود</span>
+  <div class="wrap cta-inner">
+    <div data-reveal>
+      <span class="kicker light">تواصل — LET'S TALK</span>
+      <h2>قطعتك القادمة تبدأ برسالة</h2>
+      <p class="cta-sub">أخبرنا بفكرتك على واتساب، أو تابع جديدنا على إنستغرام — نرد بكل حب، مثل ما نصنع بكل حب.</p>
+    </div>
+    <div class="cta-btns" data-reveal>
+      <a class="btn btn-green" data-wa data-magnetic href="#">
+        <svg viewBox="0 0 24 24"><path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        راسلنا على واتساب
+      </a>
+      <a class="btn btn-ig" data-magnetic href="https://www.instagram.com/tal_wood/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".9" fill="currentColor" stroke="none"/></svg>
+        تابعنا @tal_wood
+      </a>
+    </div>
+    <a class="map-card" data-reveal href="https://maps.app.goo.gl/nKNr36tqR7MEaRT77g" target="_blank" rel="noopener">
+      <span class="map-ico"><svg viewBox="0 0 24 24"><path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z"/><circle cx="12" cy="10" r="2.6"/></svg></span>
+      <span><b>Tal Wood — جيرش، الأردن</b><small>اعرف موقعنا على خرائط جوجل</small></span>
+      <svg class="map-arrow" viewBox="0 0 24 24"><path d="M19 12H5m6-7-7 7 7 7"/></svg>
+    </a>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div class="f-brand">
+      <a href="#home" class="logo"><span class="logo-mark">ود</span>
+        <span class="logo-txt"><b>Tal Wood</b><small>LIVE EDGE CRAFT</small></span></a>
+      <p>قطع فريدة ومميّزة صنعتها الطبيعة لمنزلك — مصنوعة بكل حب من أخشاب طبيعية.</p>
+    </div>
+    <div class="f-col">
+      <b>روابط</b>
+      <a href="#home">الرئيسية</a><a href="#about">الحكاية</a><a href="#gallery">المعرض</a>
+      <a href="#services">أقسامنا</a><a href="#contact">تواصل</a>
+    </div>
+    <div class="f-col">
+      <b>تابعنا</b>
+      <a href="https://www.instagram.com/tal_wood/" target="_blank" rel="noopener">إنستغرام — @tal_wood</a>
+      <a data-wa href="#">واتساب — اطلب الآن</a>
+      <a href="https://maps.app.goo.gl/nKNr36tqR7MEaRT77g" target="_blank" rel="noopener">جيرش، الأردن — الخريطة</a>
+    </div>
+  </div>
+  <div class="wrap foot-end">
+    <span>© 2025 <b>Tal Wood — وود</b> · جميع الحقوق محفوظة</span>
+    <span>صُنع بكل حب في جيرش، الأردن</span>
+  </div>
+</footer>
+
+<a class="wa-float" data-wa href="#" aria-label="واتساب">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+<button class="to-top" id="toTop" aria-label="للأعلى"><svg viewBox="0 0 24 24"><path d="M12 19V5m-7 7 7-7 7 7"/></svg></button>
+
+<div class="lightbox" id="lightbox">
+  <button class="lb-x" id="lbClose" aria-label="إغلاق"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <img id="lbImg" src="" alt="">
+  <span class="lb-cap" id="lbCap"></span>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="/Js/script.js"></script>
+</body>
+</html>
